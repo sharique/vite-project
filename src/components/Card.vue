@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card" :class="hasPadding && 'hasPad'">
         <h3 class="title">{{ heading }}</h3>
         <p class="text">{{ text }}</p>
     </div>
@@ -8,12 +8,17 @@
 
 defineProps({
     heading: String,
-    text: String
+    text: String,
+    hasPadding: Boolean
 })
 </script>
 <style scoped>
 .card {
-    padding: 10px;
+
     border: 2px solid #cef;
 }
+.hasPad{
+    padding: 20px;
+}
+
 </style>
