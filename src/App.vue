@@ -5,7 +5,8 @@ import Slider from './components/Slider.vue';
 
 <template>
   <div>
-    <Slider>test</Slider>
+    <Slider name="one">test</Slider>
+    <Slider name="two"></Slider>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
